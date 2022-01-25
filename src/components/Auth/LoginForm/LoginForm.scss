@@ -93,7 +93,7 @@
   }
 
   &__options {
-    margin-top: 50px;
+    margin-top: 20px;
     color: $font-light;
     text-align: center;
     text-transform: uppercase;
@@ -102,7 +102,6 @@
 
     p {
       &:first-of-type {
-        margin-bottom: 40px;
         &:hover {
           cursor: pointer;
         }

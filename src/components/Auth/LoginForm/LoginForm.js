@@ -21,16 +21,13 @@ export default function LoginForm(props) {
 
   const onSubmit = () => {
     setFormError({});
-    let errors = {},
-      formOk = true;
+    let errors = {};
 
     if (!validateEmail(LoginData.email)) {
       errors.email = true;
-      formOk = false;
     }
     if (LoginData.password.length < 6) {
       errors.password = true;
-      formOk = false;
     }
 
     setFormError(errors);

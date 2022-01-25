@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import AuthOptions from "../../components/Auth/AuthOption";
 import Loginform from "../../components/Auth/LoginForm";
 import RegisterFrom from "../../components/Auth/RegisterForm";
-
-//stylesheets
 import "./Auth.scss";
+import AuthIMG from "../../assets/img/bg.jpg";
 
 export default function Auth() {
   const [selectedForm, setSelectedForm] = useState(null);
@@ -22,7 +21,7 @@ export default function Auth() {
   };
 
   return (
-    <div className="auth">
+    <div className="auth" style={{ backgroundImage: `url(${AuthIMG})` }}>
       <div className="auth__dark" />
       <div className="auth__box">{handlerForm()}</div>
     </div>
